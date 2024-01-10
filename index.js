@@ -1,9 +1,26 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let reversedWord = word.split("").reverse().join("");
+
+  if (word.toLowerCase() === reversedWord.toLowerCase()) {
+    return true;
+  } else {
+    return false;
+  }
 }
+let word = "madam";
+console.log(isPalindrome(word));
+// isPalindrome(madam)
 
 /* 
   Add your pseudocode here
+  if  letters spell same forwards and backwards,
+  return true
+  else return false(go through each letter to confirm the condition)
+
+  only strings allowed
+  no empty strings--no spaces
+
 */
 
 /*
